@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>CATsino</title>
+    <style>
+        #menujuegos {
+            display: none;
+        }
+</style>
+</head>
+<body>
+
+    <h1>¿donde quiero ir? </h1>
+
+    <button onclick="bar()">
+        Bar
+    </button>
+
+    <button onclick="showroom()">
+        Showroom
+    </button>
+
+    <button onclick="mostrarmenujuegos()">
+        Juegos
+    </button>
+
+    <div id="menujuegos"> 
+        <button onclick="window.location.href='Juegos/tragagatos.html'">
+            Tragagatos
+        </button>
+        <button onclick="window.location.href='Juegos/rueda.html'">
+            Rueda
+        </button>
+        <button onclick="window.location.href='Juegos/dados.html'">
+            Dados
+        </button>
+        <button onclick="window.location.href='Juegos/alta.html'">
+            Alta
+        </button>
+        <button onclick="window.location.href='Juegos/raton.html'">
+            Raton
+        </button>
+    </div>
+
+    
+    
+
+    <script>
+        function bar() {
+            window.location.href = "bar.html";
+        }
+
+        function showroom() {
+            window.location.href = "show.html";
+        }
+        function mostrarmenujuegos() {
+            document.getElementById("menujuegos").style.display = "block";
+        }
+
+        
+         
+
+    </script>
+</body>
+</html>

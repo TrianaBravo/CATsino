@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+
+<h1>Tragagatos</h1>
+
+<button onclick="miau()">
+    girar
+</button>
+<p id="resultado"></p>
+<p id="mensaje"></p>
+
+<script>
+    function miau() {
+        let numero = Math.floor(Math.random() * 5);
+        let simbomiaus = ["😺", "😸", "😹", "😻", "😼"];
+        let resulmiau = [];
+
+        for (let i = 0; i < 3; i++) {
+            let simboguau = simbomiaus[Math.floor(Math.random() * simbomiaus.length)];
+            resulmiau.push(simboguau);
+        }
+        document.getElementById("resultado").textContent = resulmiau.join(" ");
+
+        if (
+            resulmiau[0] === resulmiau[1] &&
+            resulmiau[1] === resulmiau[2]
+        ) {
+            document.getElementById("mensaje").textContent =
+                "😻 ¡Ganaste!";
+        } else {
+            document.getElementById("mensaje").textContent =
+                "😹 Perdiste";
+        }
+    }
+</script>
