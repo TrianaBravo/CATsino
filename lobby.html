@@ -1,65 +1,28 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
+
 <head>
+    <!--icono de la pagina-->
+    <link rel="icon" type="image/png" href="imagenes/kitty2.png">
+    <!--titulo de la pagina-->
     <title>CATsino</title>
-    <style>
-        #menujuegos {
-            display: none;
-        }
-</style>
+    <meta charset="UTF-8">
+    <!--unir el css con el html para que se vea bonito-->
+    <link rel="stylesheet" href="CSS/login.css">
 </head>
+
 <body>
-
-    <h1>¿donde quiero ir? </h1>
-
-    <button onclick="bar()">
-        Bar
-    </button>
-
-    <button onclick="showroom()">
-        Showroom
-    </button>
-
-    <button onclick="mostrarmenujuegos()">
-        Juegos
-    </button>
-
-    <div id="menujuegos"> 
-        <button onclick="window.location.href='Juegos/tragagatos.html'">
+    <div class="logo">
+        <img src="imagenes/pixil-frame-0.png" alt="Logo de CATsino">
+    </div>
+    <h2>¿Dónde quiero ir?</h2>
+    
+     <button onclick="window.location.href='Juegos/tragagatos.html'">
             Tragagatos
         </button>
-        <button onclick="window.location.href='Juegos/rueda.html'">
-            Rueda
-        </button>
-        <button onclick="window.location.href='Juegos/dados.html'">
-            Dados
-        </button>
-        <button onclick="window.location.href='Juegos/alta.html'">
-            Alta
-        </button>
-        <button onclick="window.location.href='Juegos/raton.html'">
-            Raton
-        </button>
-    </div>
-
     
     
+    <script src="js/lobby.js"></script>
 
-    <script>
-        function bar() {
-            window.location.href = "bar.html";
-        }
-
-        function showroom() {
-            window.location.href = "show.html";
-        }
-        function mostrarmenujuegos() {
-            document.getElementById("menujuegos").style.display = "block";
-        }
-
-        
-         
-
-    </script>
 </body>
-</html>
+</html>    

@@ -9,52 +9,11 @@
     
 }
 
-.boton img{
-    width: 400px;
-    image-rendering: pixelated;
-    
-}
-.boton{
-  background-color: transparent;
-  border: none;
-  position: relative;
-  display: inline-block;
-  padding: 0;
-  cursor: pointer;
-}
-
-.texto-boton{
-  position: absolute;
-  top: 65%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  font-family: Minecraftia;
-  color: #ffffff;
-  font-size: 28px;
-  pointer-events: none;
-}
-
-#pata{
-    position: fixed;
-
-    width:500px;
-
-    left:50%;
-    bottom: -50%;
-
-    pointer-events:none;
-
-    image-rendering:pixelated;
-
-    transition:
-        left .12s linear,
-        top .12s linear;
-}
-
-body {
+  body {
   font-family: Minecraftia;
   text-align: center;
   background-color: #af1414;
+  color: #ffffff;
 }
 
 h1,
@@ -69,15 +28,4 @@ th {
 
 th {
   font-size: 22px;
-}
-
-.black {
-  color: #000000;
-}
-
-.black.shadow {
-  text-shadow: 3px 3px #000000;
-}
-#menujuegos {
-    display: none;
 }

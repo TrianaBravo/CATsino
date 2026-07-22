@@ -4,6 +4,9 @@
 <html lang="en">
 
 <head>
+    <!--icono de la pagina-->
+    <link rel="icon" type="image/png" href="imagenes/kitty2.png">
+    <!--titulo de la pagina-->
     <title>CATsino</title>
     <meta charset="UTF-8">
     <!--unir el css con el html para que se vea bonito-->
@@ -11,17 +14,19 @@
 </head>
 
 <body>
-    <h1>🐈CATsino🐈</h1>
+    <div class="logo">
+        <img src="imagenes/pixil-frame-0.png" alt="Logo de CATsino">
+    </div>
 
-    <button onclick="Entrar()">
-        Entrar
+    <button class="boton" onclick="Entrar()">
+    <img src="imagenes/CatON.png" alt="">
+    <span class="texto-boton">Entrar</span>
     </button>
 
-    <script>
-        function Entrar() {
-            window.location.href = "lobby.html";
-        }
-    </script>
+    <img src="imagenes/Patica.png" id="pata" alt="">
+
+    
+    <script src="js/login.js"></script>
    
     
 </body>
