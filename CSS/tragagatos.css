@@ -6,8 +6,86 @@
 .logo img{
     width:500px;
     image-rendering: pixelated;
+    margin-top: 50px;
     
 }
+
+.escenario{
+    display: flex;
+    justify-content: center;   /* centra TODO el conjunto */
+    align-items: end;
+    gap: 0px;                 /* distancia entre máquina y gato */
+    width: 100%;
+    margin-top: 0px;
+}
+
+.tragagatos{
+    width: 330px;
+    image-rendering: pixelated;
+    position: relative;
+  }
+
+.maquina{
+    width: 370px;
+    image-rendering: pixelated;
+  }
+
+.rodillos{
+    position:absolute;
+
+    top:100px;      /* ajustar */
+    left:25px;      /* ajustar */
+
+    width:100px;
+    height:100px;
+
+    display:flex;
+    justify-content:space-around;
+    align-items:center;
+
+    font-size:60px;
+}
+#girar{
+    position:absolute;
+    width:100px;
+    bottom:90px;   /* ajustar */
+    left:45%;
+    transform:translateX(-50%);
+}
+
+/* Mensaje */
+#resultado{
+    position:absolute;
+    bottom:180px;
+    left:-10%;
+    width:100%;
+    text-align:center;
+    color:rgb(27, 0, 0);
+}  
+
+.gatochino {
+    width: 300px;
+    image-rendering: pixelated;
+   
+  }  
+
+h1{
+    margin-top: 0px;
+}
+
+button{
+    font-family: Minecraftia;
+    font-size: 20px;
+    background-color: #af1414;
+    color: #ffffff;
+    border: 2px solid #ffffff;
+    padding: 10px 20px;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s;
+    margin-top: 20px;
+
+}
+
 
   body {
   font-family: Minecraftia;
@@ -15,4 +93,7 @@
   background-color: #af1414;
   color: #ffffff;
 }
+
+
+
 

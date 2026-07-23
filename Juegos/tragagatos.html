@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <head>
     <!--icono de la pagina-->
-    <link rel="icon" type="image/png" href="imagenes/kitty2.png">
+    <link rel="icon" type="image/png" href="../imagenes/kitty2.png">
     <!--titulo de la pagina-->
     <title>CATsino</title>
     <meta charset="UTF-8">
@@ -9,38 +9,38 @@
     <link rel="stylesheet" href="../CSS/tragagatos.css">
 </head>
 
+<!--   cuerpo de la pagina -->
 <body>
     <div class="logo">
         <img src="../imagenes/pixil-frame-0.png" alt="Logo de CATsino">
     </div>
-<h1>Tragagatos</h1>
-<button onclick="miau()">
-    girar
-</button>
-<p id="resultado"></p>
-<p id="mensaje"></p>
+<!--   titulo de la pagina -->
+<h1 >Tragagatos</h1>
 
-<script>
-    function miau() {
-        let numero = Math.floor(Math.random() * 5);
-        let simbomiaus = ["😺", "😸", "😹", "😻", "😼"];
-        let resulmiau = [];
 
-        for (let i = 0; i < 3; i++) {
-            let simboguau = simbomiaus[Math.floor(Math.random() * simbomiaus.length)];
-            resulmiau.push(simboguau);
-        }
-        document.getElementById("resultado").textContent = resulmiau.join(" ");
+<!--   ZONA GATO Y MAQUINA -->
+<div class="escenario">
 
-        if (
-            resulmiau[0] === resulmiau[1] &&
-            resulmiau[1] === resulmiau[2]
-        ) {
-            document.getElementById("mensaje").textContent =
-                "😻 ¡Ganaste!";
-        } else {
-            document.getElementById("mensaje").textContent =
-                "😹 Perdiste";
-        }
-    }
-</script>
+    <div class="tragagatos">
+
+        <img src="../imagenes/tragagatos/TragaGatos.png" id="maquina" class="maquina">
+
+        <div class="rodillos">
+                <div class="casilla"><span id="r1">🐱</span></div>
+                <div class="casilla"><span id="r2">🐱</span></div>
+                <div class="casilla"><span id="r3">🐱</span></div>
+        </div>
+
+            <button id="girar" onclick="girar()">Girar</button>
+
+            <div id="resultado"></div>
+
+    </div>
+        
+    <img src="../imagenes/tragagatos/Chino1.png" id="gato" class="gatochino" alt="">
+    
+</div>
+
+<script src="../JS/tragagatos.js"></script>
+
+</body>

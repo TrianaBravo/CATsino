@@ -6,12 +6,14 @@
 .logo img{
     width:500px;
     image-rendering: pixelated;
+    margin-top: 50px;
     
 }
 
 .boton img{
     width: 400px;
     image-rendering: pixelated;
+    margin-top: 100px;
     
 }
 .boton{
@@ -25,7 +27,7 @@
 
 .texto-boton{
   position: absolute;
-  top: 65%;
+  top: 78%;
   left: 50%;
   transform: translate(-50%, -50%);
   font-family: Minecraftia;
